@@ -49,11 +49,6 @@ export const COPY = {
   process: {
     lead: "Read the guides. Understand the coverage. Call us when you're ready — and get real quotes from specialty contractor markets in about 15 minutes.",
   },
-  testimonials: {
-    eyebrow: "From contractors who researched first",
-    h2Lead: "Contractors who understood",
-    h2Highlight: "before they bought",
-  },
   finalCta: {
     h2Lead: "Ready to move from",
     h2Highlight: "information to coverage?",

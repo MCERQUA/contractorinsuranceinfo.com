@@ -230,26 +230,3 @@ export const STATS = [
   { value: 50, suffix: "", label: "States licensed & writing", prefix: "" },
 ] as const;
 
-export const TESTIMONIALS = [
-  {
-    quote:
-      "Finally found an agent who could explain the difference between GL and E&O clearly — and then actually placed both. The resource hub on this site helped me understand what I was buying before I ever called.",
-    name: "Aaron M.",
-    role: "General Contractor",
-    location: "Texas",
-  },
-  {
-    quote:
-      "I didn't understand completed-operations coverage until I read the guides here. Now I know exactly what my policy covers and what it doesn't — and I'm not carrying the gaps my last broker left me with.",
-    name: "Patricia S.",
-    role: "Design-Build Contractor",
-    location: "California",
-  },
-  {
-    quote:
-      "Used the information here to understand umbrella limits before a GC negotiation. Walked into that subcontract knowing exactly what I needed. Saved me from signing a contract I couldn't actually meet.",
-    name: "Derek W.",
-    role: "Electrical Contractor",
-    location: "Florida",
-  },
-] as const;
