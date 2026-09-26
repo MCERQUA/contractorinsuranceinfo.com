@@ -10,16 +10,16 @@
 
 @layer base {
   :root {
-    --bg-cream: #ffffff;
-    --bg-sand: #f8fafc;
+    --bg-cream: #FBF8F3;
+    --bg-sand: #F3EEE6;
     --bg-white: #ffffff;
-    --clay: #2563eb;
-    --clay-dark: #1d4ed8;
-    --sage: #0f172a;
-    --espresso: #0f172a;
-    --cocoa: #334155;
-    --mocha: #64748b;
-    --adobe: #e2e8f0;
+    --clay: #9C4722;
+    --clay-dark: #7E3A1B;
+    --sage: #1C1410;
+    --espresso: #1C1410;
+    --cocoa: #44403C;
+    --mocha: #6B625A;
+    --adobe: #E7E1D9;
     --radius: 0.5rem;
   }
 
@@ -48,7 +48,7 @@
   }
 
   ::selection {
-    background: rgba(37, 99, 235, 0.12);
+    background: rgba(156, 71, 34, 0.12);
     color: var(--espresso);
   }
 }
@@ -105,13 +105,13 @@
     position: absolute;
     top: 0; left: 0; bottom: 0;
     width: 3px;
-    background: #2563eb;
+    background: #9C4722;
   }
 
   .pill { @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-xs font-body font-semibold uppercase tracking-[0.08em]; }
-  .pill-clay { @apply pill bg-blue-100 text-blue-700 border border-blue-200; }
-  .pill-sage { @apply pill bg-slate-100 text-slate-700 border border-slate-200; }
-  .pill-gold { @apply pill bg-blue-50 text-blue-600 border border-blue-200; }
+  .pill-clay { @apply pill bg-clay-100 text-clay-800 border border-clay-200; }
+  .pill-sage { @apply pill bg-sage-100 text-sage-700 border border-sage-200; }
+  .pill-gold { @apply pill bg-gold-50 text-gold-dark border border-gold-200; }
 
   .eyebrow { @apply inline-flex items-center gap-2 text-xs font-body font-bold uppercase tracking-[0.14em] text-clay; }
   .h-section { @apply font-heading font-bold text-3xl md:text-4xl lg:text-5xl text-espresso leading-[1.1]; }
@@ -123,43 +123,43 @@
   .bg-sonoran {
     background-color: #ffffff;
     background-image:
-      radial-gradient(ellipse at top left, rgba(37,99,235,0.03) 0%, transparent 50%);
+      radial-gradient(ellipse at top left, rgba(156,71,34,0.03) 0%, transparent 50%);
   }
 
   /* Slate-50 alt section */
   .bg-sonoran-sand {
-    background-color: #f8fafc;
+    background-color: #F3EEE6;
     background-image:
-      radial-gradient(ellipse at top right, rgba(37,99,235,0.04) 0%, transparent 45%);
+      radial-gradient(ellipse at top right, rgba(156,71,34,0.04) 0%, transparent 45%);
   }
 
   /* Barely-there warm radial for hero */
   .bg-warm-radial {
     background:
-      radial-gradient(ellipse at top, rgba(37,99,235,0.04) 0%, transparent 55%),
+      radial-gradient(ellipse at top, rgba(156,71,34,0.04) 0%, transparent 55%),
       #ffffff;
   }
 
   /* Editorial section divider — thin horizontal 1px rule */
   .horizon-band {
     height: 1px;
-    background: linear-gradient(90deg, transparent 0%, #e2e8f0 20%, #2563eb 50%, #e2e8f0 80%, transparent 100%);
+    background: linear-gradient(90deg, transparent 0%, #E7E1D9 20%, #9C4722 50%, #E7E1D9 80%, transparent 100%);
   }
 
   /* Very subtle dot texture for stats sections */
   .grain {
     background-image:
-      radial-gradient(circle, rgba(37,99,235,0.05) 1px, transparent 1px);
+      radial-gradient(circle, rgba(156,71,34,0.05) 1px, transparent 1px);
     background-size: 32px 32px;
   }
 
   /* Blue dot accent pattern */
   .dotted-warm {
-    background-image: radial-gradient(circle, rgba(37,99,235,0.10) 1px, transparent 1px);
+    background-image: radial-gradient(circle, rgba(156,71,34,0.10) 1px, transparent 1px);
     background-size: 24px 24px;
   }
 
-  .arch-divider { height: 1px; background: #e2e8f0; }
+  .arch-divider { height: 1px; background: #E7E1D9; }
 
   /* Editorial prose — clean, readable, journalistic */
   .prose-warm { @apply max-w-none; }
@@ -172,7 +172,7 @@
     content: "";
     position: absolute; left: 0; top: 0.6em;
     width: 0.5rem; height: 0.5rem;
-    background: #2563eb;
+    background: #9C4722;
     border-radius: 50%;
   }
   .prose-warm strong { @apply text-espresso font-semibold; }
@@ -180,9 +180,9 @@
   .prose-warm blockquote { @apply border-l-4 border-clay pl-5 py-2 my-6 text-espresso italic; }
 
   /* Dark utility sections */
-  .diva-dark { background: #0f172a; }
-  .diva-surface { background-color: #1e293b; }
-  .diva-near-black { background-color: #0f172a; }
+  .diva-dark { background: #1C1410; }
+  .diva-surface { background-color: #2E241E; }
+  .diva-near-black { background-color: #1C1410; }
 }
 
 @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }

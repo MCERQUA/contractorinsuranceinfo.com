@@ -2,9 +2,10 @@ import type { Config } from "tailwindcss";
 
 /* ============================================================
    CONTRACTOR INSURANCE INFO — "Editorial Information Hub" palette
-   Stitch design system: clean white + electric blue + slate
-   clay = blue-600 (interactive) · sage = slate-900 (dark sections)
-   cream = white · sand = slate-50 · espresso = slate-900
+   Warm editorial: off-white + terracotta + amber + espresso (2026-09-26;
+   was electric blue + slate — Josh HARD NO on blue gradients, USER.md L32)
+   clay = terracotta (interactive) · sage = warm espresso (dark sections)
+   cream = warm off-white · sand = warm alt bg · espresso = warm near-black
    ============================================================ */
 
 const config: Config = {
@@ -17,59 +18,59 @@ const config: Config = {
     extend: {
       colors: {
         // === Backgrounds ===
-        cream: "#ffffff",             // pure white page background
-        sand: "#f8fafc",              // slate-50 alt section bg
+        cream: "#FBF8F3",             // warm off-white page background
+        sand: "#F3EEE6",              // warm alt section bg
         white: "#ffffff",
-        // === Primary — Electric Blue (token name: clay) ===
+        // === Primary — Terracotta (token name: clay) ===
         clay: {
-          DEFAULT: "#2563eb",         // blue-600 — all CTAs, links, accents
-          dark: "#1d4ed8",            // blue-700
-          light: "#3b82f6",           // blue-500
-          50: "#eff6ff",
-          100: "#dbeafe",
-          200: "#bfdbfe",
-          300: "#93c5fd",
-          400: "#60a5fa",
-          500: "#3b82f6",
-          600: "#2563eb",
-          700: "#1d4ed8",
-          800: "#1e40af",
-          900: "#1e3a8a",
+          DEFAULT: "#9C4722",         // terracotta — all CTAs, links, accents (white text 6.2:1)
+          dark: "#7E3A1B",            // hover / pressed
+          light: "#B4552D",
+          50: "#FBF1EA",
+          100: "#F6DFD0",
+          200: "#EDC0A3",
+          300: "#E09A72",
+          400: "#CF7647",
+          500: "#B4552D",
+          600: "#9C4722",
+          700: "#7E3A1B",
+          800: "#6B2F13",
+          900: "#4F220D",
         },
-        // === Secondary — Near-black slate (token name: sage) ===
+        // === Secondary — Warm espresso (token name: sage) ===
         sage: {
-          DEFAULT: "#0f172a",         // slate-950 — dark hero/CTA sections
-          dark: "#020617",            // almost black
-          light: "#1e293b",           // slate-800
-          50: "#f8fafc",
-          100: "#f1f5f9",
-          200: "#e2e8f0",
-          300: "#cbd5e1",
-          400: "#94a3b8",
-          500: "#64748b",
-          600: "#475569",
-          700: "#334155",
+          DEFAULT: "#1C1410",         // warm espresso — dark hero/CTA sections
+          dark: "#0F0A07",
+          light: "#2E241E",
+          50: "#FAF8F5",
+          100: "#F3EFEA",
+          200: "#E7E1D9",
+          300: "#D3CBC0",
+          400: "#A8A095",
+          500: "#78716C",
+          600: "#57534E",
+          700: "#44403C",
         },
-        // === Accent — Blue shades (token name: gold) ===
+        // === Accent — Amber (token name: gold) ===
         gold: {
-          DEFAULT: "#2563eb",
-          dark: "#1d4ed8",
-          light: "#3b82f6",
-          50: "#eff6ff",
-          100: "#dbeafe",
-          200: "#bfdbfe",
-          300: "#93c5fd",
-          400: "#60a5fa",
-          500: "#3b82f6",
-          600: "#2563eb",
+          DEFAULT: "#D98F2B",
+          dark: "#9A5B12",
+          light: "#F0B458",
+          50: "#FDF6EA",
+          100: "#FAE8C8",
+          200: "#F4D08F",
+          300: "#EDB65C",
+          400: "#E3A03C",
+          500: "#D98F2B",
+          600: "#B8741C",
         },
         // === Text ===
-        espresso: "#0f172a",          // slate-950 — headlines, dark text
-        cocoa: "#334155",             // slate-700 — body text
-        mocha: "#64748b",             // slate-500 — muted text
+        espresso: "#1C1410",          // warm near-black — headlines, dark text
+        cocoa: "#44403C",             // warm stone-700 — body text
+        mocha: "#6B625A",             // warm grey — muted text
         // === Borders / dividers ===
-        adobe: "#e2e8f0",             // slate-200 — editorial borders
-        adobeDark: "#cbd5e1",         // slate-300
+        adobe: "#E7E1D9",             // warm border
+        adobeDark: "#D3CBC0",
       },
       fontFamily: {
         heading: ["var(--font-heading)", "system-ui", "sans-serif"],
@@ -83,21 +84,21 @@ const config: Config = {
       },
       backgroundImage: {
         "sunrise-bands":
-          "linear-gradient(180deg, #ffffff 0%, #f8fafc 40%, #f1f5f9 70%, #ffffff 100%)",
+          "linear-gradient(180deg, #FBF8F3 0%, #F3EEE6 40%, #F7EBDD 70%, #FBF8F3 100%)",
         "warm-radial":
-          "radial-gradient(circle at 30% 20%, rgba(37,99,235,0.05) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(15,23,42,0.03) 0%, transparent 55%)",
-        "clay-gradient": "linear-gradient(135deg, #2563eb 0%, #3b82f6 100%)",
-        "sage-gradient": "linear-gradient(135deg, #0f172a 0%, #1e293b 100%)",
-        "gold-gradient": "linear-gradient(135deg, #2563eb 0%, #3b82f6 100%)",
-        "info-hero": "linear-gradient(135deg, #0f172a 0%, #1e293b 100%)",
-        "info-surface": "linear-gradient(180deg, #1e293b 0%, #0f172a 100%)",
+          "radial-gradient(circle at 30% 20%, rgba(156,71,34,0.05) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(28,20,16,0.03) 0%, transparent 55%)",
+        "clay-gradient": "linear-gradient(135deg, #9C4722 0%, #B4552D 100%)",
+        "sage-gradient": "linear-gradient(135deg, #1C1410 0%, #2E241E 100%)",
+        "gold-gradient": "linear-gradient(135deg, #D98F2B 0%, #E3A03C 100%)",
+        "info-hero": "linear-gradient(135deg, #1C1410 0%, #2E241E 100%)",
+        "info-surface": "linear-gradient(180deg, #2E241E 0%, #1C1410 100%)",
       },
       boxShadow: {
-        warm: "0 4px 20px -8px rgba(37,99,235,0.15), 0 2px 8px -4px rgba(15,23,42,0.08)",
-        "warm-lg": "0 12px 40px -15px rgba(37,99,235,0.20), 0 6px 20px -8px rgba(15,23,42,0.10)",
-        card: "0 1px 4px -1px rgba(15,23,42,0.06), 0 1px 2px -1px rgba(15,23,42,0.04)",
-        "card-hover": "0 8px 24px -8px rgba(37,99,235,0.18), 0 4px 12px -4px rgba(15,23,42,0.08)",
-        arch: "0 0 0 1px rgba(226,232,240,1)",
+        warm: "0 4px 20px -8px rgba(156,71,34,0.15), 0 2px 8px -4px rgba(28,20,16,0.08)",
+        "warm-lg": "0 12px 40px -15px rgba(156,71,34,0.20), 0 6px 20px -8px rgba(28,20,16,0.10)",
+        card: "0 1px 4px -1px rgba(28,20,16,0.06), 0 1px 2px -1px rgba(28,20,16,0.04)",
+        "card-hover": "0 8px 24px -8px rgba(156,71,34,0.18), 0 4px 12px -4px rgba(28,20,16,0.08)",
+        arch: "0 0 0 1px rgba(231,225,217,1)",
       },
       keyframes: {
         "fade-up": {
