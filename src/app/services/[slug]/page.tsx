@@ -17,15 +17,15 @@ const ICONS = {
   ShieldCheck, HardHat, Truck, Wrench, FileCheck, Umbrella, Award,
 } as const;
 
-// Per-service hero imagery (falls back to coverage.jpg)
+// Per-service hero imagery (falls back to hero.jpg)
 const SERVICE_IMAGE: Record<string, string> = {
-  "general-liability": "/images/coverage.jpg",
-  "workers-compensation": "/images/coverage.jpg",
-  "commercial-auto": "/images/coverage.jpg",
-  "professional-liability": "/images/coverage.jpg",
-  "commercial-umbrella": "/images/coverage.jpg",
-  "surety-bonds": "/images/coverage.jpg",
-  "tools-equipment": "/images/coverage.jpg",
+  "general-liability": "/images/jobsite.jpg",
+  "workers-compensation": "/images/scaffold-safety.jpg",
+  "commercial-auto": "/images/lumber-package.jpg",
+  "professional-liability": "/images/blueprint-tools.jpg",
+  "commercial-umbrella": "/images/commercial-build.jpg",
+  "surety-bonds": "/images/truss-roof.jpg",
+  "tools-equipment": "/images/nail-gun-action.jpg",
 };
 
 export function generateStaticParams() {
