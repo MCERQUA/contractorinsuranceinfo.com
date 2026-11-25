@@ -8,7 +8,7 @@ import { SITE } from "@/lib/site";
 import { CheckCircle2, ArrowRight, Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 
 const WEBHOOK_URL =
-  "https://josh.jam-bot.com/social-api/api/leads/webhook/netlify?tenant=josh&site=framingcontractorinsurance.com";
+  "https://josh.jam-bot.com/social-api/api/leads/webhook/netlify?tenant=josh&site=contractorinsuranceinfo.com";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -38,7 +38,7 @@ export default function ContactPage() {
       await fetch(WEBHOOK_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ form_name: "contact", source: "framingcontractorinsurance.com", ...formData }),
+        body: JSON.stringify({ form_name: "contact", source: "contractorinsuranceinfo.com", ...formData }),
       });
       setSubmitted(true);
     } catch {

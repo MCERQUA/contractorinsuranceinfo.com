@@ -4,7 +4,7 @@ import { QUOTE_SERVICE_TYPES } from '@/lib/content'
 
 // Unchanged from the pre-port form: leads keep posting under this site value.
 const WEBHOOK_URL =
-  'https://josh.jam-bot.com/social-api/api/leads/webhook/netlify?tenant=josh&site=framingcontractorinsurance.com'
+  'https://josh.jam-bot.com/social-api/api/leads/webhook/netlify?tenant=josh&site=contractorinsuranceinfo.com'
 
 const TRADES = [
   'General contractor',
@@ -79,7 +79,7 @@ export default function ContractorInfoQuoteForm() {
       endpoint={WEBHOOK_URL}
       format="json"
       netlifyFallback="/__forms.html"
-      extraFields={{ form_name: 'quote', source: 'framingcontractorinsurance.com' }}
+      extraFields={{ form_name: 'quote', source: 'contractorinsuranceinfo.com' }}
       options={{ yn: true, feinRequired: false }}
       tradeTypeOptions={TRADES}
       defaults={{ coverageTypes: 'General Liability' }}
